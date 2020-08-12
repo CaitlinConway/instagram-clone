@@ -3,16 +3,6 @@ const getPhotos = async () => {
   const data = await res.json();
   return data;
 };
-const getLikes = async () => {
-  const res = await fetch("/api/likes");
-  const data = await res.json();
-  return data;
-};
-const getComments = async () => {
-  const res = await fetch("/api/comments");
-  const data = await res.json();
-  return data;
-};
 const getLikesForPic = async (photoId) => {
   const res = await fetch(`/api/likes/${photoId}`);
   const data = await res.json();
